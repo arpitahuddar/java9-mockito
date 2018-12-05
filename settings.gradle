@@ -1,12 +1,3 @@
-include 'deprecatedPluginsTest'
-include 'inline'
-include 'extTest'
-include 'kotlinTest'
-include 'kotlinReleaseCoroutinesTest'
-include 'android'
-include 'junit-jupiter'
-include 'junitJupiterExtensionTest'
-
 rootProject.name = 'mockito'
 
 rootProject.children.each { project ->
@@ -17,7 +8,7 @@ rootProject.children.each { project ->
     assert project.buildFile.isFile()
 }
 
-enableFeaturePreview('STABLE_PUBLISHING')
+//enableFeaturePreview('STABLE_PUBLISHING')
 
 buildCache {
     local {
